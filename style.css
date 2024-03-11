@@ -1,0 +1,151 @@
+/* Shared styles for buttons */
+.encriptar-button,
+.desencriptar-button,
+.copiar-button {
+  padding: 10px 40px;
+  font-weight: 600;
+  border-color: #BBBBBB;
+  border-radius: 40px;
+  margin-top: 40px;
+  color: aliceblue;
+}
+
+.encriptar-button { background-color: #05155a; }
+.encriptar-button:hover { background-color: #314291; }
+
+.desencriptar-button { background-color: #666565; }
+.desencriptar-button:hover { background-color: #4d4c4c; }
+
+.copiar-button { background-color: #05155a; }
+.copiar-button:hover { background-color: #314291; }
+
+/* Container styles */
+.caja {
+  width: 940px;
+  margin: 0px auto;
+  padding: 40px;
+}
+
+.caja li {
+  display: inline-block;
+  text-align: center;
+  width: 40%;
+  vertical-align: top;
+  margin: 0 4%;
+  padding: 15px 20px;
+  box-sizing: border-box;
+  border: 2px solid #d8d8d8;
+  border-radius: 10px;
+  background-color: #ffffff;
+}
+
+.caja-texto {
+  padding: 10px;
+  border-color: white;
+  font-size: larger;
+  background-color: #BBBBBB;
+  border: 2px solid #d8d8d8;
+  border-radius: 40px;
+  text-align: center;
+  resize: none;
+
+  width: 300px;
+  height: 320px;
+}
+
+header {
+    background-color: #f5f2f2;
+    padding: 90px 0;
+}
+
+#alura-imagen {
+  padding: 20px 0;
+  display: block; /* Asegura que la imagen sea un elemento de bloque */
+  margin: auto;
+  cursor: pointer;
+}
+
+#textoResultado {
+    max-width: 250px;
+    text-align: center;
+    margin: 0 auto;
+    font-family: "Monaco";
+    font-size: larger;
+    font-weight: bold;
+}
+
+#textoUsuario {
+  font-family: "Monaco";
+  font-size: larger;
+}
+
+#particles-js {
+  background-color: #ffffff;
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+}
+
+#muñeco {
+  width: 300px;
+}
+
+/* Media Query para pantallas más pequeñas */
+@media screen and (max-width: 480px) {
+
+  .caja-texto {
+    padding: 10px;
+    border-color: white;
+    font-size: larger;
+    background-color: #BBBBBB;
+    border: 2px solid #d8d8d8;
+    border-radius: 40px;
+    text-align: center;
+    resize: none;
+  
+    width: auto;
+    height: auto;
+  }
+  
+
+  #particles-js {
+    width: auto; 
+  }
+
+  .caja {
+    width: auto;
+    margin: auto 0;
+  }
+
+  #muñeco {
+    width: 150px;
+    text-align: center;
+  }
+
+  .caja li {
+    display: block;
+    width: auto;
+    margin-top: 30px;
+  }
+
+  .encriptar-button,
+  .desencriptar-button {
+    padding: 10px 40px;
+    font-weight: 600;
+    border-color: #BBBBBB;
+    border-radius: 40px;
+    margin-top: 15px;
+    color: aliceblue;
+  }
+
+  #textoResultado {
+    max-width: 250px;
+    text-align: center;
+    margin: 0 auto;
+    font-family: "Monaco";
+    font-size: large;
+    font-weight: bold;
+}
+
+}
